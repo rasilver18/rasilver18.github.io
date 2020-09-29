@@ -1,3 +1,8 @@
+#logo {
+  padding: 5px;
+  max-height: 75px;
+  max-width: auto;
+}
 p {
   max-width: 400px;
   display: block;
@@ -57,9 +62,7 @@ p {
   max-height: auto;
   border-radius: 15px;
 }
-#logo {
-  padding: 5px;
-}
+
 .topMain {
   text-align: center;
 }
