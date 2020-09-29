@@ -1,0 +1,37 @@
+/* div h2 {
+  text-align: center;
+}
+
+.nav ul li {
+  list-style-type: none;
+  display: inline;
+}
+
+a {
+  text-decoration: none;
+}
+.aboutPage {
+  display: grid;
+  display: flex;
+  grid-template-rows: 20% 40%;
+  flex-direction: column;
+  justify-content: center;
+}
+#headshot {
+  max-width: 200px;
+  max-height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container {
+  background-color: rgb(201, 172, 209);
+  margin: auto;
+  max-width: 80%;
+}
+#logo {
+  padding: 5px;
+}
+.topMain {
+  text-align: center;
+} */
