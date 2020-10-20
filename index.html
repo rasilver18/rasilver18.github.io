@@ -6,11 +6,12 @@
     <link rel="layout" href="layout.css" />
     <link rel="layout" href="layout2.css" />
     <link rel="stylesheet" href="style.css" />
+
     <title>Rachael Silver Portfolio</title>
   </head>
   <body>
     <div class="container">
-      <header>
+      <header class="head">
         <h1 id="name">Rachael Silver</h1>
         <nav class="nav">
           <ul>
@@ -23,87 +24,235 @@
       <main>
         <section class="aboutPage">
           <h2 id="about">About Me</h2>
-          <img
-            id="headshot"
-            src="assets/Rachael S-Headshot.jpg"
-            alt="Rachael stands outside smiling"
-          />
+          <article id="aboutBox">
+            <img
+              id="headshot"
+              src="assets/Rachael S-Headshot.jpg"
+              alt="Rachael stands outside smiling"
+            />
 
-          <p id="ab">
-            I'm Rachael Silver, a Software Developer located in Cleveland, OH. I
-            am currently enrolled in We Can Code IT's full-stack Software
-            Development Program. I come from a background in recruiting and
-            International Studies, where I was able to develop empathetic
-            approaches to every day interations and problem solving. I also run
-            my own small online shop selling items I create utilizing epoxy
-            resin. It is this amalgamation of diverse skillsets that make
-            development an ideal environment from me. I love being able to
-            utilize my creativity in every day life and working in collaborative
-            work spaces. Software Development allows me to leverage these
-            skillsets and others into successful projects. For more information,
-            please visit my
-            <a href="https://github.com/rasilver18">Github </a> and
-            <a href="https://www.linkedin.com/in/rachael-silver-0b37215b/"
-              >LinkedIn.
-            </a>
-          </p>
+            <p id="ab">
+              I'm Rachael Silver, a Software Developer located in Cleveland, OH.
+              I am currently enrolled in We Can Code IT's full-stack Software
+              Development Program. I come from a background in recruiting and
+              International Studies, where I was able to develop empathetic
+              approaches to every day interations and problem solving. I also
+              run my own small online shop selling items I create utilizing
+              epoxy resin. It is this amalgamation of diverse skillsets that
+              make development an ideal environment from me. I love being able
+              to utilize my creativity in every day life and working in
+              collaborative work spaces. Software Development allows me to
+              leverage these skillsets and others into successful projects. For
+              more information, please visit my
+              <a href="https://github.com/rasilver18">Github </a> and
+              <a href="https://www.linkedin.com/in/rachael-silver-0b37215b/"
+                >LinkedIn.
+              </a>
+            </p>
+          </article>
         </section>
         <h2 id="projectHeader">Projects</h2>
         <section class="projects">
-          <article id="project1a">
+          <article class="project">
             <h3>Virtual Pet</h3>
+
             <img
               id="project1"
               src="assets/Virtual Pet 3.jpg"
               alt="An image of code that simulates it running. Features a purple cat named Ollie"
             />
-            <p>
-              This is a simple project coded in Java utlizing Intellij IDEA.
-              Built using TDD, this project also includes a simple main class
-              and app class allowing for user interaction. This application is
-              designed to be an interactive virtual pet. It allows a user to
-              name their pet, select if it is a cat or a dog, and even the
-              color! The application then returns an image of the user's pet and
-              allows the user to the interact with the pet through feeding,
-              playing, and more.
-            </p>
+            <div id="myModal" class="modal">
+              <!-- Modal content -->
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                <div class="sliderBox">
+                  <div class="slideImage">
+                    <img
+                      class="pet"
+                      src="assets/virtualpet1.jpg"
+                      alt="An image of code that simulates it running. Features a purple cat named Ollie"
+                    />
+                  </div>
+                  <div class="slideImage">
+                    <img
+                      class="pet"
+                      src="assets/virtualpet2.jpg"
+                      alt="An image of code that simulates it running. Features a purple cat named Ollie"
+                    />
+                  </div>
+                  <div class="slideImage">
+                    <img
+                      class="pet"
+                      src="assets/virtualpet3.jpg"
+                      alt="An image of code that simulates it running. Features a purple cat named Ollie"
+                    />
+                  </div>
+                  <a class="left" onclick="nextSlide(-1)">❮</a>
+                  <a class="right" onclick="nextSlide(1)">❯</a>
+                </div>
+              </div>
+            </div>
+
+            <button class="showMore">More Info</button>
+            <section class="projectContent">
+              <p>
+                This is a simple project coded in Java utlizing Intellij IDEA.
+                Built using TDD, this project also includes a simple main class
+                and app class allowing for user interaction. This application is
+                designed to be an interactive virtual pet. It allows a user to
+                name their pet, select if it is a cat or a dog, and even the
+                color! The application then returns an image of the user's pet
+                and allows the user to the interact with the pet through
+                feeding, playing, and more.
+              </p>
+            </section>
           </article>
-          <article id="project2a">
-            <h3>Virtual Pet Shelter</h3>
-            <img
-              id="project2"
-              src="assets/virtualpetshelter.jpg"
-              alt="An image of a code class. Features code written to allow for a pet to be adopted or intake"
-            />
-            <p>
-              This project is an expansion on the Virtual Pet Project. Utilizing
-              Java, TDD, and IntelliJ, this project incorporated new techniques
-              such as hashmaps, and the ability to add or remove entities given
-              user command. This application allows the user to act as if they
-              are working in a virtual pet shelter, helping animlas get adopt,
-              performing intakes and interacting with the animals in order to
-              maintain their character levels.
-            </p>
-          </article>
-          <article id="project3a">
+          <article class="project">
             <h3>Virtual Pet Amok</h3>
             <img
+              id="project2"
+              src="assets/amok7.jpg"
+              alt="An image of a code class. Features code written to allow for a pet to be adopted or intake"
+            />
+            <div id="myModalB" class="modal">
+              <!-- Modal content -->
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                <div class="sliderBox">
+                  <div class="slideImage">
+                    <img
+                      class="amok"
+                      src="assets/amok1.jpg"
+                      alt="An image of a code class. Features code written to allow for a pet to be adopted or intake"
+                    />
+                  </div>
+                  <div class="slideImage">
+                    <img
+                      class="amok"
+                      src="assets/amok2.jpg"
+                      alt="An image that features the layout of a code. Shows multiple main and test classess as well as code written out."
+                    />
+                  </div>
+                  <div class="slideImage">
+                    <img
+                      class="amok"
+                      src="assets/amok3.jpg"
+                      alt="An image that features the layout of a code. Shows multiple main and test classess as well as code written out."
+                    />
+                  </div>
+                  <div class="slideImage">
+                    <img
+                      class="amok"
+                      src="assets/amok4.jpg"
+                      alt="An image that features the layout of a code. Shows multiple main and test classess as well as code written out."
+                    />
+                  </div>
+                  <div class="slideImage">
+                    <img
+                      class="amok"
+                      src="assets/amok5.jpg"
+                      alt="An image that features the layout of a code. Shows multiple main and test classess as well as code written out."
+                    />
+                  </div>
+                  <div class="slideImage">
+                    <img
+                      class="amok"
+                      src="assets/amok6.jpg"
+                      alt="An image that features the layout of a code. Shows multiple main and test classess as well as code written out."
+                    />
+                  </div>
+                  <div class="slideImage">
+                    <img
+                      class="amok"
+                      src="assets/amok7.jpg"
+                      alt="An image that features the layout of a code. Shows multiple main and test classess as well as code written out."
+                    />
+                  </div>
+                  <a class="left" onclick="nextSlide(-1)">❮</a>
+                  <a class="right" onclick="nextSlide(1)">❯</a>
+                </div>
+              </div>
+            </div>
+            <button class="showMorea">More Info</button>
+            <section class="projectContenta">
+              <p>
+                This project is an expansion on the Virtual Pet Project.
+                Utilizing Java, TDD, and IntelliJ, this project incorporated new
+                techniques such as hashmaps, and the ability to add or remove
+                entities given user command. This application allows the user to
+                act as if they are working in a virtual pet shelter, helping
+                animlas get adopt, performing intakes and interacting with the
+                animals in order to maintain their character levels.
+              </p>
+            </section>
+          </article>
+          <article class="project">
+            <h3>Skate Reviews Site</h3>
+            <img
               id="project3"
-              src="assets/virtual-pet-amok.jpg"
+              src="assets/skatehome.jpg"
               alt="An image that features the layout of a code. Shows multiple main and test classess as well as code written out."
             />
-            <p>
-              This project is an expansion on the Virtual Pet Project. Utilizing
-              Java, TDD, and IntelliJ, this project incorporated new techniques
-              such as utilizing OOP techniques, interfaces, and abstract
-              classes. This application, while allowing the user to do all of
-              the above activities, also allowed for activities to only be
-              completed given a pet being Robotic, Organic, or a dog or a cat.
-              For example, robotic pets can only be oiled while organic pets can
-              be fed and given water. In addition, I utilized interfaces to
-              allow for specific activities for dogs and cats such as walking
-              the dogs and allowing cats to use a litterbox.
-            </p>
+            <div id="myModalC" class="modal">
+              <!-- Modal content -->
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                <div class="sliderBox">
+                  <div class="slideImage">
+                    <img
+                      class="skates"
+                      src="assets/skatehome.jpg"
+                      alt="Front page layout of code project. Has skates"
+                    />
+                  </div>
+                  <div class="slideImage">
+                    <img
+                      class="skates"
+                      src="assets/skate1.jpg"
+                      alt="One singular skate image"
+                    />
+                  </div>
+                  <div class="slideImage">
+                    <img
+                      class="skates"
+                      src="assets/categories.jpg"
+                      alt="A list of skate categories"
+                    />
+                  </div>
+                  <div class="slideImage">
+                    <img
+                      class="skates"
+                      src="assets/categoryone.jpg"
+                      alt="A singular category"
+                    />
+                  </div>
+                  <div class="slideImage">
+                    <img
+                      class="skates"
+                      src="assets/skatecode.jpg"
+                      alt="One singular skate image"
+                    />
+                  </div>
+                  <a class="left" onclick="nextSlide(-1)">❮</a>
+                  <a class="right" onclick="nextSlide(1)">❯</a>
+                </div>
+              </div>
+            </div>
+            <button class="showMoreb">More Info</button>
+            <section class="projectContentb">
+              <p>
+                This project is an expansion on the Virtual Pet Project.
+                Utilizing Java, TDD, and IntelliJ, this project incorporated new
+                techniques such as utilizing OOP techniques, interfaces, and
+                abstract classes. This application, while allowing the user to
+                do all of the above activities, also allowed for activities to
+                only be completed given a pet being Robotic, Organic, or a dog
+                or a cat. For example, robotic pets can only be oiled while
+                organic pets can be fed and given water. In addition, I utilized
+                interfaces to allow for specific activities for dogs and cats
+                such as walking the dogs and allowing cats to use a litterbox.
+              </p>
+            </section>
           </article>
         </section>
       </main>
@@ -117,5 +266,6 @@
         <small>&copy asilvercloud 2020</small>
       </footer>
     </div>
+    <script src="actions.js"></script>
   </body>
 </html>

@@ -10,15 +10,26 @@
 
 h1 {
   background-color: rgb(21, 201, 224);
-  width: 1245px;
   display: block;
+  width: 50%;
+  /* display: block;
   margin-left: auto;
-  margin-right: auto;
+  margin-right: auto; */
+  margin-right: 10%;
+  margin-left: 10%;
   color: white;
-  border-radius: 15px;
-  text-align: center;
+
+  /* text-align: center; */
   font-size: 50px;
   font-weight: bold;
+}
+.head {
+  background-color: rgb(21, 201, 224);
+  border-radius: 15px;
+  width: 100%;
+  height: 40%;
+  display: flex;
+  justify-content: flex-start;
 }
 
 h2 {
@@ -44,10 +55,7 @@ h3 {
   background-color: rgb(195, 0, 255);
   transition: 0.5s;
 }
-h1:hover {
-  background-color: rgb(195, 0, 255);
-  transition: 0.5s;
-}
+
 h2:hover {
   background-color: rgb(195, 0, 255);
   transition: 0.5s;
@@ -58,9 +66,10 @@ h3:hover {
 }
 .nav ul li a {
   color: rgb(248, 245, 245);
-  font-size: 20px;
+  font-size: 25px;
   font-weight: bold;
 }
+
 div h2 {
   text-align: center;
 }
@@ -98,19 +107,16 @@ a {
 }
 .projects {
   display: grid;
-  display: flex;
-  grid-template-columns: 40% 40% 40%;
-  flex-direction: row;
-  justify-content: stretch;
-  align-items: stretch;
-  margin-left: 10%;
-  margin-right: 10%;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 90%;
+  margin: auto;
 }
 .container {
-  background-color: rgb(208, 163, 218);
+  background-color: rgba(136, 216, 226, 0.24);
   margin: auto;
   max-width: 100%;
 }
+
 #logo {
   padding: 5px;
   max-height: 75px;
@@ -134,6 +140,16 @@ p {
   list-style-type: none;
   display: inline;
 }
+
+.nav {
+  display: flex;
+
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  background-color: rgb(21, 201, 224);
+}
+
 .aboutPage {
   display: grid;
   display: flex;
@@ -152,9 +168,13 @@ p {
   margin-left: auto;
   margin-right: auto;
 }
-#project1a {
-  max-width: 280 px;
+.project {
+  margin: 20%;
   max-height: auto;
+  display: grid;
+  grid-template-rows: 1fr 3fr 1fr;
+  background-color: rgba(0, 140, 255, 0.192);
+  border-radius: 5%;
 }
 #project2 {
   max-width: 250px;
@@ -179,3 +199,129 @@ p {
 .topMain {
   text-align: center;
 }
+.projectContent {
+  display: none;
+}
+.projectContenta {
+  display: none;
+}
+.projectContentb {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: rgba(0, 174, 255, 0.459);
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+.pet {
+  max-width: 80%;
+  display: block;
+  margin: auto;
+}
+.amok {
+  max-width: 80%;
+  display: block;
+  margin: auto;
+}
+
+.skates {
+  max-width: 80%;
+  display: block;
+  margin: auto;
+}
+.showMore {
+  max-width: 30%;
+  margin: auto;
+  background-color: rgb(21, 201, 224);
+}
+.showMorea {
+  max-width: 30%;
+  margin: auto;
+  background-color: rgb(21, 201, 224);
+}
+.showMoreb {
+  max-width: 30%;
+  margin: auto;
+  background-color: rgb(21, 201, 224);
+}
+.showSlide {
+  display: none;
+}
+.showSlide img {
+  width: 100%;
+}
+.slidercontainer {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+.left,
+.right {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  margin-right: 10%;
+}
+.right {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.left:hover,
+.right:hover {
+  background-color: rgba(8, 18, 126, 0.8);
+}
+/* .content {  
+  color: #eff5d4;  
+  font-size: 30px;  
+  padding: 8px 12px;  
+  position: absolute;  
+  top: 10px;  
+  width: 100%;  
+  text-align: center;  
+}   */
+/* .active {
+  background-color: #717171;
+} */
