@@ -169,7 +169,23 @@ p {
   margin-right: auto;
 }
 .project {
-  margin: 20%;
+  margin: 10%;
+  max-height: auto;
+  display: grid;
+  grid-template-rows: 1fr 3fr 1fr;
+  background-color: rgba(0, 140, 255, 0.192);
+  border-radius: 5%;
+}
+.projectB {
+  margin: 10%;
+  max-height: auto;
+  display: grid;
+  grid-template-rows: 1fr 3fr 1fr;
+  background-color: rgba(0, 140, 255, 0.192);
+  border-radius: 5%;
+}
+.projectC {
+  margin: 10%;
   max-height: auto;
   display: grid;
   grid-template-rows: 1fr 3fr 1fr;

@@ -16,27 +16,61 @@ buttonb.addEventListener("click", function () {
 });
 
 var slide_index = 1;
+var slide_indexC = 1;
+var slide_indexB = 1;
 displaySlides(slide_index);
+displaySlides(slide_indexC);
+displaySlides(slide_indexB);
+
 function nextSlide(n) {
   displaySlides((slide_index += n));
+  displaySlides((slide_indexC += n));
+  displaySlides((slide_indexB += n));
 }
+
 function currentSlide(n) {
   displaySlides((slide_index = n));
+  displaySlides((slide_indexC = n));
+  displaySlides((slide_indexB = n));
 }
+
 function displaySlides(n) {
   var i;
   var slides = document.getElementsByClassName("slideImage");
+  var slidesB = document.getElementsByClassName("slideImageB");
+  var slidesC = document.getElementsByClassName("slideImageC");
   if (n > slides.length) {
     slide_index = 1;
+  }
+  if (n > slidesB.length) {
+    slide_indexB = 1;
+  }
+  if (n > slidesC.length) {
+    slide_indexC = 1;
   }
   if (n < 1) {
     slide_index = slides.length;
   }
+  if (n < 1) {
+    slide_indexB = slidesB.length;
+  }
+  if (n < 1) {
+    slide_indexC = slidesC.length;
+  }
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
+  for (i = 0; i < slidesB.length; i++) {
+    slidesB[i].style.display = "none";
+  }
+  for (i = 0; i < slidesC.length; i++) {
+    slidesC[i].style.display = "none";
+  }
   slides[slide_index - 1].style.display = "block";
+  slidesB[slide_indexB - 1].style.display = "block";
+  slidesC[slide_indexC - 1].style.display = "block";
 }
+
 // Get the modal
 var modal = document.getElementById("myModal");
 var modalB = document.getElementById("myModalB");
